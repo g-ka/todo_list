@@ -3,6 +3,7 @@
 
 let todo_list = JSON.parse(localStorage.getItem('array_list')) || [];
 let task_date = JSON.parse(localStorage.getItem('object_list')) || {};
+display(JSON.parse(localStorage.getItem('html')));
 
 function enter(event)
 {
@@ -53,4 +54,5 @@ function display(html)
   display.innerHTML = html;
   localStorage.setItem('array_list',JSON.stringify(todo_list));
   localStorage.setItem('object_list',JSON.stringify(task_date));
+  localStorage.setItem('html',JSON.stringify(html));
 }
