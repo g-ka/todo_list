@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To_Do_List</title>
+  <link rel="stylesheet" href="todo_list.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&d
+  isplay=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="x-icon" href="todo_list.png">
+</head>
+<body>
+  <div class="all_elements">
+    <p class="p1">
+      Todo List
+    </p>
+    <div class="god_div">
+      <div class="first_row">
+        <input placeholder="Todo name"
+               class="js_inp"
+               onkeydown="enter(event);">
+        <input type="date"
+               class="js_date"
+               onkeydown="enter(event);">
+        <button class="js_btn gen_btn"
+                onclick="add_arr();">
+          Add
+        </button>
+      </div>
+      <p class="js_para">
+    
+      </p>
+    </div>
+  </div>
+  <script src="todo_list.js"></script>
+</body>
+</html>
