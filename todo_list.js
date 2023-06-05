@@ -3,7 +3,7 @@
 
 let todo_list = JSON.parse(localStorage.getItem('array_list')) || [];
 let task_date = JSON.parse(localStorage.getItem('object_list')) || {};
-display(JSON.parse(localStorage.getItem('html')));
+display(JSON.parse(localStorage.getItem('html')) || '');
 
 function enter(event)
 {
